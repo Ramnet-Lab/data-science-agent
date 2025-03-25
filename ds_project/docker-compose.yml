@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  data-science-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8502:8501"
+    volumes:
+      - ./data:/app/data
+      - ./eda_plots:/app/eda_plots
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    restart: unless-stopped
+    container_name: data-science-agent

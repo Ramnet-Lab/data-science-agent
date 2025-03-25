@@ -1,0 +1,17 @@
+langchain
+langchain-community
+openai
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+pydantic
+requests
+beautifulsoup4
+pandas-gbq
+pymupdf
+spacy
+dask
+tiktoken
